@@ -1,0 +1,184 @@
+/* RESET */
+@font-face {
+    font-family: "Fraunces";
+    src: url(/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color-scheme: dark-light;
+    /* hanging-punctuation: first last; */
+}
+
+/* body {
+    height: 100svh;
+} */
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+table {
+    font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    max-width: 75ch;
+    /* text-wrap: pretty; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding: 3rem;
+    }
+}
+
+/* MAIN CSS */
+
+html {
+    background-color: rgba(207, 223, 228, .8);
+}
+
+body {
+    background-color: #eee;
+    border-radius: 1rem;
+    font-family: "Fraunces";
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+
+    >* {
+        margin-bottom: 1rem;
+    }
+
+    >h1 {
+        font-size: 2rem;
+        height: 4rem;
+        margin: 0 auto 1rem;
+        transition: font-size 1s ease;
+        width: fit-content;
+    }
+
+    >h1:hover {
+        font-size: 4rem;
+    }
+
+    >p {
+        letter-spacing: 1px;
+        margin: 0 auto 1rem;
+    }
+}
+
+
+#section1,
+#section2 {
+    color: #4d52ac;
+    font-weight: bold;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+#section1:hover,
+#section2:hover,
+#section1:focus,
+#section2:focus,
+#section1:active,
+#section2:active {
+    color: #6f1fca
+}
+
+table {
+    font-variant-caps: petite-caps;
+    width: 100%;
+
+    >td {
+        justify-content: space-between;
+    }
+
+}
+
+.prose {
+    font-variant-numeric: oldstyle-nums;
+
+    >abbr {
+        font-variant-caps: all-small-caps;
+    }
+}
+
+.tech {
+    font-variant-numeric: diagonal-fractions;
+}
+
+.chemical {
+    font-feature-settings: "sinf";
+}
+
+.square {
+    font-size: 3rem;
+}
+
+.icon {
+    display: inline-block;
+    background-color: currentColor;
+    height: 1.1ex;
+    margin-right: 1cap;
+    transition: transform 1s ease-in-out;
+    width: 1.1cap;
+}
+
+.icon:hover {
+    transform: rotate(720deg) scale(2, 3);
+    background-color: rgba(0, 0, 0, .8);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    font-variant-caps: all-small-caps;
+
+    .nav-btn {
+        color: #4d52ac;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .nav-btn:hover,
+    .nav-btn:focus,
+    .nav-btn:active {
+        color: #6f1fca;
+    }
+
+    /* @media (min-width: 600px) {
+        .nav-span-spacing {
+            width: 20%;
+        }
+    } */
+}

@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    margin: 3rem auto;
+  }
+  
+  main {
+    width: 70vw;
+    margin: auto;
+  }
+  
+  #title, #description {
+    text-align: center;
+  }
+  
+  .form-group {
+    display: block;
+    padding: .5rem;
+  
+    outline: 1px solid red;
+  }
+  
+  #name, #email, #number {
+    display: flex;
+    width: 90%;
+  }
+  
+  .form-group [type="checkbox"] {
+    display: block;
+  }

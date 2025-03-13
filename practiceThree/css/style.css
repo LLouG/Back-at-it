@@ -1,0 +1,167 @@
+/* RESET */
+@font-face {
+    font-family: "Fraunces";
+    src: url(/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color-scheme: dark-light;
+    /* hanging-punctuation: first last; */
+}
+
+/* body {
+    height: 100svh;
+} */
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+table {
+    font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    max-width: 75ch;
+    /* text-wrap: pretty; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding: 3rem;
+    }
+}
+
+/* MAIN CSS */
+
+body {
+    background-color: #eee;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+nav {
+    background-color: #ddd;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.nav-span a {
+    color: #333;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+.nav-span a:hover {
+    color: #666;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+main {
+    width: 60%;
+}
+
+aside {
+    width: 40%;
+}
+
+.aside-img {
+    background-image: url(../img/background.jpg);
+}
+
+.main-img {
+    background-image: url(../img/background2.jpg.webp);
+}
+
+.aside-img,
+.main-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    min-width: 100%;
+}
+
+.main-container * {
+    margin-bottom: 1rem;
+}
+
+.main-container h1,
+.main-container h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    letter-spacing: .1ch;
+}
+
+.span-p {
+    letter-spacing: 0ch;
+    font-weight: bold;
+}
+
+footer {
+    font-weight: bold;
+    margin-top: 5rem;
+    padding-right: 1rem;
+    text-align: end;
+    width: 100%;
+}
+
+footer p {
+    margin-left: auto;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    main,
+    aside {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: .7em;
+    }
+}

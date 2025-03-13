@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balance App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h2 class="first-heading">YOUR BALANCE</h2>
+        <span class="balance-number">5000</span>
+      </div>
+      <div class="information">
+        <div class="income-expenses">
+          <div class="income">
+            <p>Income</p>
+            <p>5000</p>
+          </div>
+          <span class="line"></span>
+          <div class="expenses">
+            <p>Expenses</p>
+            <p>0</p>
+          </div>
+        </div>
+        <div class="description">
+          <label for="description">Description</label>
+          <input
+            type="text"
+            name="description"
+            id="description"
+            placeholder="e.g internet bills"
+          />
+        </div>
+        <div class="amount">
+          <label for="amount">Amount</label>
+          <input
+            type="text"
+            name="amount"
+            id="amount"
+            placeholder="+ for income or - for expense"
+          />
+        </div>
+        <button>ADD</button>
+      </div>
+    </div>
+
+    <aside>
+      <h2>TRANSACTIONS</h2>
+      <div class="transactions">
+        <span>Salary</span>
+        <span>+5000</span>
+      </div>
+    </aside>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+/* RESET */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color-scheme: dark-light;
+    /* hanging-punctuation: first last; */
+}
+
+body {
+    min-height: 100svh;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* NEWER FEATURES */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    max-width: 75ch;
+    text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding: 3rem;
+    }
+}
+
+/* MAIN CSS */
+
+body {
+    background-color: #eee;
+    color: #333;
+    font-family: sans-serif;
+    margin: 2rem 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+body * {
+    margin-bottom: 1rem;
+}
+
+header {
+    height: 80vh;
+}
+
+input {
+    margin-left: .5rem;
+    padding: .25rem .25rem .35rem;
+}
+
+.btn {
+    background-color: #CCAAFF;
+    border: 1px transparent;
+    border-radius: .5rem;
+    color: #fff;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    width: 30%;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #84a5fa;
+}
+
+.btn-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.div-btn,
+.previous-count {
+    height: 1rem;
+}

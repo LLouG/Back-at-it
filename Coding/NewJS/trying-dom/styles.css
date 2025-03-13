@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --noto: 'Noto Sans KR', sans-serif;
+    --text-clr: #F0F4EF;
+    --card-clr: #344966;
+    --bkg-clr: #0D1821;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    background: var(--bkg-clr);
+}
+
+.card {
+    width: 70vw;
+    min-height: 40vh;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+
+    font-family: var(--noto);
+    font-weight: 500;
+    color: var(--text-clr);
+    background: var(--card-clr);
+    text-align: center;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .5);
+}
+
+.image {
+    margin-top: 1rem;
+    width: 100%;
+}

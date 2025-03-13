@@ -1,0 +1,50 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 90vh;
+}
+
+.flag {
+    display: flex;
+    margin: auto;
+    width: 450px;
+    height: 250px;
+    background: #fff;
+    box-shadow: 0 0 1em .5em;
+}
+
+.circle {
+    margin: auto;
+    background: red;
+    border-radius: 100rem;
+    width: 30%;
+    height: 55%;
+}
+
+ul {
+    position: absolute;
+    list-style: none;
+    margin: 20px 80px;
+    rotate: 125deg;
+}
+
+li {
+    margin-bottom: .2em;
+    width: 4em;
+    height: 1em;
+    background: #111;
+/*     outline: 1px solid #111;
+    outline-offset: -.2em; */
+}
+
+.right__side {
+    rotate: 100deg;
+    margin: 4px 205px;
+}

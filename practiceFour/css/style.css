@@ -1,0 +1,66 @@
+/* RESET */
+@font-face {
+    font-family: "Fraunces";
+    src: url(/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color-scheme: dark-light;
+    /* hanging-punctuation: first last; */
+}
+
+/* body {
+    height: 100svh;
+} */
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+table {
+    font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    max-width: 75ch;
+    /* text-wrap: pretty; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding: 3rem;
+    }
+}
+
+/* MAIN CSS */
+
+.title {
+    font-size: 2rem;
+    margin: 1rem;
+}

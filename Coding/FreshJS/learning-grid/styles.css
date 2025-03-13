@@ -1,0 +1,124 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.testimonial-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+/*  grid-template-columns: repeat(3, 1fr); */
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+
+    
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+.grids > img {
+/*     display: flex;
+    justify-content: center;
+    margin: 0 auto; */
+    margin-bottom: 1.5rem;
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.grids {
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: repeat(2, 1fr);
+    grid-template-areas: 'first second' 'third third';
+}
+
+.grid-image {
+    grid-area: first;
+}
+
+.grid-p {
+    grid-area: second;
+}
+
+.grid-p2 {
+    grid-area: third;
+}
+
+.testimonial {
+    background-color: rgb(159, 233, 208);
+    font-size: 1rem;
+    font-weight: 800;
+    text-shadow: 0 0 1px #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.25rem;
+
+    /* Border gradients */
+    border-inline-start: 4px solid;
+    border-block-start: 4px solid;
+    border-image-source: radial-gradient(circle at top left, rgb(120, 197, 120), transparent 50%);
+    border-image-slice: 1;
+}
+
+.testimonial:nth-child(1) {
+    grid-area: one;
+}
+
+.testimonial:nth-child(2) {
+    grid-area: two;
+    background: rgb(27, 167, 167) !important;
+}
+
+.testimonial:nth-child(3) {
+    grid-area: three;
+}
+
+.testimonial:nth-child(4) {
+    grid-area: four;
+}
+
+.testimonial:nth-child(5) {
+    grid-area: five;
+    background: rgb(27, 167, 167) !important;
+}
+
+@media (min-width: 20em) {
+    .testimonial-grid {
+        grid-template-areas: 
+        'two five five'
+        'three four one';
+    }
+
+    .grids {
+        display: block;
+    }
+}
+
+@media (min-width: 50em) {
+    .testimonial-grid {
+        grid-template-areas: 
+        'one one two five'
+        'three four four five';
+    }
+
+    .grids {
+        display: block;
+    }
+}
+
+/* .testimonial:nth-last-child(2) {
+    grid-column-start: 3;
+    grid-row: 1 / span 2;
+/*  grid-row-start: 1;
+    grid-row-end: 3; */
+/*  grid-column: span 2;
+} */

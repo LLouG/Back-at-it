@@ -1,0 +1,35 @@
+/* https://fonts.google.com/specimen/New+Rocker?preview.text=Loug&preview.text_type=custom */
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+/* https://fonts.google.com/specimen/Audiowide?preview.text=Loug&preview.text_type=custom */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+main#just {
+    size: 50px;
+    font-family: 'Audiowide', cursive;
+}

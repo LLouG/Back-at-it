@@ -1,0 +1,144 @@
+/* RESET */
+@font-face {
+    font-family: "Fraunces";
+    src: url(/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color-scheme: dark-light;
+    /* hanging-punctuation: first last; */
+}
+
+body {
+    height: 100svh;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+table {
+    font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    max-width: 75ch;
+    /* text-wrap: pretty; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding: 3rem;
+    }
+}
+
+/* MAIN CSS */
+
+body {
+    font-family: "Fraunces", 'Times New Roman', Times, serif;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: center;
+    width: 100vw;
+}
+
+main * {
+    margin-bottom: .75rem;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 4rem;
+    letter-spacing: .1ch;
+    margin-bottom: 2rem;
+}
+
+#search-bar {
+    border: 1px solid #444;
+    border-radius: 1.5rem;
+    font-size: 1.125rem;
+    height: 3rem;
+    padding: .75rem 2rem;
+    width: 22rem;
+}
+
+.buttons {
+    display: inline-flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 60%;
+}
+
+.main-btn {
+    border: 1px solid #444;
+    border-radius: 1.5rem;
+    color: #444;
+    text-align: center;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    max-width: fit-content;
+}
+
+.main-btn:hover {
+    color: #000;
+}
+
+footer {
+    padding: .5rem;
+}
+
+footer p {
+    text-align: end;
+    max-width: 100%;
+    padding-right: 1rem;
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}

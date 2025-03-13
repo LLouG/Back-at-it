@@ -1,0 +1,165 @@
+/* RESET */
+@font-face {
+    font-family: "Fraunces";
+    src: url(/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color-scheme: dark-light;
+    /* hanging-punctuation: first last; */
+}
+
+/* body {
+    height: 100svh;
+} */
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+table {
+    font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    max-width: 75ch;
+    /* text-wrap: pretty; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding: 3rem;
+    }
+}
+
+/* MAIN CSS */
+
+:root {
+    --green-lgt-clr: #84a847;
+    --green-drk-clr: #163c2c;
+}
+
+body {
+    font-family: "Fraunces";
+}
+
+body * {
+    margin-bottom: 1rem;
+}
+
+.header {
+    background-color: var(--green-lgt-clr);
+    height: 4.5rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    height: 4rem;
+    align-items: flex-end;
+}
+
+.ul__li--a {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.ul__li--a:hover {
+    color: var(--green-drk-clr);
+}
+
+.main {
+    float: left;
+    height: calc(100dvh - 4.5rem);
+    width: 50%;
+}
+
+.aside {
+    float: right;
+    width: 45%;
+}
+
+.main,
+.aside {
+    margin: 0 .5rem;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.main__article--p {
+    letter-spacing: .1ch;
+    line-height: 1.4;
+}
+
+.aside__card--img {
+    background-image: url("/img/background2.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    height: 200px;
+    width: 300px;
+}
+
+.footer {
+    align-items: center;
+    background-color: var(--green-lgt-clr);
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    height: 4.5rem;
+    padding: .5rem;
+}
+
+.footer__p {
+    margin-bottom: 1ch;
+}
+
+@media (max-width: 600px) {
+
+    .main,
+    .aside,
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .main {
+        height: fit-content;
+    }
+}

@@ -1,0 +1,114 @@
+/* RESET */
+@font-face {
+    font-family: "Fraunces";
+    src: url(/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color-scheme: dark-light;
+    /* hanging-punctuation: first last; */
+}
+
+/* body {
+    height: 100svh;
+} */
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+table {
+    font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    max-width: 75ch;
+    /* text-wrap: pretty; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding: 3rem;
+    }
+}
+
+/* MAIN CSS */
+
+nav {
+    display: flex;
+    font-family: "Fraunces";
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 10dvh;
+    padding: .75rem;
+    align-items: center;
+}
+
+.header__logo {
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header__logo--a {
+    color: black;
+    text-decoration: none;
+}
+
+.header__logo--a:hover,
+.header__logo--a::selection {
+    color: #555;
+}
+
+#header__input {
+    height: 4ch;
+    padding: 0 .5rem;
+    min-width: 25ch;
+}
+
+.header__ul {
+    display: inherit;
+    font-weight: 500;
+}
+
+.header__ul--li {
+    list-style-type: none;
+    padding: .5rem;
+}
+
+.header__button {
+    font-weight: 600;
+    text-wrap: nowrap;
+    padding: .5rem 1rem;
+}
+
+main {
+    background-color: black;
+    height: 100dvh;
+}

@@ -1,0 +1,155 @@
+
+:root {
+    --clr-1: #f25c00;
+    --clr-2: #ec4559;
+    --clr-3: #bf4686;
+    --clr-4: #41537f;
+    --clr-5: #2f4858;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 300;
+    background: linear-gradient(var(--clr-1), var(--clr-2));
+    min-height: 100vh;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.intro {
+    font-size: 4rem;
+    display: grid;
+    grid: 
+        "hello hello" 75vh
+        "my-name-is loug" 125vh / max-content 1fr;
+    margin-bottom: 60vh;
+    gap: 15px;
+}
+
+.intro1 {
+    grid-area: hello;
+    align-self: center;
+    position: sticky;
+    top: 2em;
+    margin-bottom: 1.5em;
+}
+
+.intro2 {
+    grid-area: my-name-is;
+    font-weight: 900;
+    font-style: italic;
+    position: sticky;
+    top: 3.5em;
+    align-self: center;
+}
+
+.intro3 {
+    grid-area: loug;
+    align-self: end;
+}
+
+.css {
+    text-align: center;
+    margin-bottom: 60vh;
+}
+
+.responsive-website {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid: "text idol" 1fr / 1fr 1fr;
+    gap: 1em;
+
+    margin-bottom: 50vh;
+}
+
+.responsive-website p {
+    position: sticky;
+    top: 20vh;
+    grid-area: text;
+    align-self: start;
+}
+
+.thumbnails {
+    margin-top: 60vh;
+    background: var(--clr-5);
+    padding: 0.3em;
+    position: relative;
+
+    > img {
+        position: relative;
+        z-index: 3;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        /* fix transparency in higher resolutions */
+        background: linear-gradient(var(--clr-3), var(--clr-4) 80%, transparent 95%);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+    }
+}
+
+.surprise {
+    position: sticky;
+    bottom: 100px;
+    font-weight: 900;
+    margin-top: 3em;
+    margin-bottom: 0.7em;
+/*     z-index: -1; */
+    color: white;
+}
+
+.a-bit-more {
+    background: url(images/twice.jpg);
+    background-size: cover;
+    font-size: 2rem;
+    padding: 2em;
+    height: 200vh;
+    position: relative;
+
+    > p {
+        position: relative;
+        z-index: 2;
+        color: white;
+        position: sticky;
+        top: 2em;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(var(--clr-4) 5%, transparent, white 85%)
+    }
+}
+
+.the-end {
+    font-size: 5rem;
+    background: white;
+    text-align: center;
+    padding: 25vh 0 50vh;
+}
